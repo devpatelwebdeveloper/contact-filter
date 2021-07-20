@@ -6,7 +6,7 @@ const listItems = [
   {
     image: "https://via.placeholder.com/150",
     contactTitle: "Site Name",
-    contactAddress: "Site Address",
+    contactAddress: "Site Addressasda",
     shortDesc: "Main Contact"
   },
   {
