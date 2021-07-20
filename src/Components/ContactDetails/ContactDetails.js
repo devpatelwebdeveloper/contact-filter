@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Suspense } from "react";
 import ReactDom from "react-dom";
 import "./ContactDetails.css";
-import { phoneicon, emailicon, addressicon } from "./icons";
+import { phoneicon, emailicon, addressicon, closeicon } from "./icons";
 
 const ContactDetails = ({ open, details, onClose, image }) => {
   if (!open) return null;
@@ -25,7 +25,7 @@ const ContactDetails = ({ open, details, onClose, image }) => {
           <div>1419 Westwood Blvd, LA</div>
         </div>
         <button className="closeBtn" onClick={onClose}>
-          X
+          {closeicon}
         </button>
         {details}
       </div>
