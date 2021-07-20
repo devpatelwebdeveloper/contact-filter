@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ContactDetails from "../ContactDetails/ContactDetails";
 import "./ContactCard.css";
 const ContactCard = ({ image, contactTitle, contactAddress, shortDesc }) => {
-  const [showDetails, setShowDetails] = useState(true);
+  const [showDetails, setShowDetails] = useState(false);
   const handleClick = () => {
     setShowDetails(true);
   };
