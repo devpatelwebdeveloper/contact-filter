@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ContactDetails from "../ContactDetails/ContactDetails";
 import "./ContactCard.css";
 const ContactCard = ({ image, contactTitle, contactAddress, shortDesc }) => {
-  const [showDetails, setShowDetails] = useState(false);
+  const [showDetails, setShowDetails] = useState(true);
   const handleClick = () => {
     setShowDetails(true);
   };
@@ -37,6 +37,7 @@ const ContactCard = ({ image, contactTitle, contactAddress, shortDesc }) => {
       <ContactDetails
         open={showDetails}
         details={contactTitle}
+        image={image}
         onClose={() => {
           setShowDetails(false);
         }}
